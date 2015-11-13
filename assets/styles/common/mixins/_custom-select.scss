@@ -1,0 +1,48 @@
+@mixin custom-select($bg-color, $height, $text-color ,$arrow-color) {
+  .select {
+    position: relative;
+    background-color: $bg-color;
+    height: $height;
+
+    select {
+      background: transparent;
+      width: 100%;
+      height: $height;
+      padding: 10px 15px;
+      line-height: 1;
+      border: 0;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      color: $text-color;
+      z-index: 1;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2.5px;
+    }
+
+    &:after {
+      content: '\f0d7';
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      top: 35%;
+      right: 15px;
+      color: $arrow-color;
+    }
+
+    @media screen and (min-width: 0 \0) {
+      overflow: hidden;
+
+      select {
+        width: 120%;
+      }
+    }
+  }
+}

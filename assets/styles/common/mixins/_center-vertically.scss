@@ -1,0 +1,13 @@
+@mixin center-vertically($parent-height, $child-height, $spacing: 0) {
+
+  @if $spacing {
+    margin: ($parent-height/2 - $spacing - $child-height/2) 0;
+    li {
+      padding-top: $spacing;
+      padding-bottom: $spacing;
+    }
+  } @else {
+    margin: $parent-height/2 - $child-height/2 0;
+  }
+
+}

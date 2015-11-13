@@ -1,0 +1,15 @@
+@mixin custom-link($color) {
+  a {
+    color: $color;
+
+    &:hover,
+    &:focus {
+      color: lighten($color, 10%);
+      text-decoration: none;
+    }
+
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
