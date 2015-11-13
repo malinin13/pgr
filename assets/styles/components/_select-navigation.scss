@@ -1,0 +1,8 @@
+.select-navigation {
+  padding: 20px 0;
+  @include custom-select(#fff, 55px, $brand-text-gray, $brand-text-gray);
+
+  h4 {
+    margin-top: 20px;
+  }
+}
