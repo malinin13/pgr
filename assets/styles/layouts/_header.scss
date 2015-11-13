@@ -1,3 +1,33 @@
+.topbar-section {
+  padding: 25px 0;
+  height: 125px;
+
+  h3 {
+    display: table;
+    padding: 5px;
+    background-color: #fff;
+    margin: 0;
+  }
+
+  .logo-section {
+    position: relative;
+    display: inline-block;
+    img {
+      position: absolute;
+      bottom: 0;
+      right: -55px;
+    }
+  }
+
+  .btn {
+    @include center-vertically(75px, 45px);
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    height: auto;
+  }
+}
+
 .hero-section {
   height: 600px;
   transition: .1s linear all;
@@ -54,5 +84,11 @@
     margin: 0 auto;
     letter-spacing: 5px;
     font-weight: bold;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    height: auto;
+    padding: 50px 0;
   }
 }

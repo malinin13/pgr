@@ -28,13 +28,15 @@ $brand-yellow:          #f7c901;
 $brand-green:           #419b6e;
 $brand-lighter-green:   #29d18c;
 $brand-darker-blue:     #07acb7;
+$brand-gray:            #f7f7f7;
+$brand-black:           #404040;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               $brand-gray !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -114,9 +116,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;

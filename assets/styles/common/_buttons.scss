@@ -1,0 +1,7 @@
+.btn-black {
+  @include button-variant(#fff, $brand-black, $brand-black)
+}
+
+.btn-red {
+  @include button-variant(#fff, $brand-red, $brand-red)
+}
