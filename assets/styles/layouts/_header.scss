@@ -1,0 +1,58 @@
+.hero-section {
+  height: 600px;
+  transition: .1s linear all;
+  position: relative;
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  color: #fff;
+
+  @include custom-link(#fff);
+
+  a {
+    position: relative;
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+    }
+  }
+
+  .hero-section-overlay {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background-size: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: -1;
+  }
+
+  .inner {
+    height: 600px;
+    width: 100%;
+    display: table;
+
+    .inner-text {
+      height: 600px;
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  h3 {
+    display: table;
+    padding: 15px;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+}
