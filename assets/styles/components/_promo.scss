@@ -1,0 +1,19 @@
+.promo {
+  padding: 20px;
+  background-color: #fff;
+  margin: 35px 0;
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .brands-list {
+    img {
+      max-width: 120px;
+    }
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    text-align: center;
+  }
+}

@@ -31,6 +31,8 @@ $brand-darker-blue:     #07acb7;
 $brand-gray:            #f7f7f7;
 $brand-black:           #404040;
 
+$brand-text-gray:       #404040;
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -38,7 +40,7 @@ $brand-black:           #404040;
 //** Background color for `<body>`.
 $body-bg:               $brand-gray !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $brand-text-gray !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
