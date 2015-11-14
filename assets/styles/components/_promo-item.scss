@@ -1,13 +1,26 @@
 .promo-item {
   background-color: #fff;
+  margin: 30px 0;
 
   .owl-theme .owl-dots {
     text-align: left;
-
     margin-top: -30px!important;
     margin-bottom: 0;
     position: relative;
     margin-left: 10px;
+  }
+
+  .promo-carousel-name {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 10;
+
+    h3 {
+      margin: 0;
+      padding: 20px;
+    }
   }
 
   .promo-item-body {

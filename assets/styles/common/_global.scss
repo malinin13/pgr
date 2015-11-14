@@ -6,6 +6,10 @@
   background-color: $brand-yellow;
 }
 
+.bg-orange {
+  background-color: $brand-orange;
+}
+
 .bg-green {
   background-color: $brand-lighter-green;
 }
@@ -41,4 +45,17 @@ p {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
+}
+
+#return-to-top {
+  padding: 0 5px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  z-index: 1000;
+
+  a {
+    color: #b7b7b7;
+  }
 }

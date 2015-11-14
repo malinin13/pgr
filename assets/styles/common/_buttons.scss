@@ -5,3 +5,7 @@
 .btn-red {
   @include button-variant(#fff, $brand-red, $brand-red)
 }
+
+.btn-blue {
+  @include button-variant(#fff, $brand-blue, $brand-blue)
+}

@@ -1,0 +1,61 @@
+$booking-item-height: 80px;
+
+
+.booking-item {
+  background-color: #fff;
+  border: 1px solid $brand-darker-gray;
+  margin-bottom: 20px;
+  @include clearfix();
+
+  @media screen and (min-height: $screen-sm-min) {
+    height: $booking-item-height;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-size: 22px;
+    @include center-vertically($booking-item-height, 24px);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .booking-item-actions {
+    padding: 0;
+    height: $booking-item-height;
+
+    * {
+      float: right;
+      line-height: $booking-item-height;
+    }
+
+    .btn {
+      height: 100%;
+      padding: 0 25px 0;
+      font-size: 20px;
+
+      @media screen and (max-width: $screen-sm-max) {
+        padding: 0 5px 0;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        width: 50%;
+      }
+
+    }
+
+    i {
+      padding-right: 20px;
+      font-size: 16px;
+      color: #393939;
+      font-weight: bold;
+
+      @media screen and (max-width: $screen-sm-max) {
+        padding: 0 15px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
