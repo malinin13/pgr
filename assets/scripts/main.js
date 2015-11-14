@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('.promo-carousel').owlCarousel({
         items: 1,
         dots: true
-    })
+    });
 
     // ===== Scroll to Top ====
     $(window).scroll(function () {
@@ -24,16 +24,16 @@ $(document).ready(function () {
         }, 500);
     });
 
-    var distance = $('.select-navigation').offset().top,
+    var selectNavigation = $('.select-navigation');
+    var distance = selectNavigation.offset().top,
         $window = $(window);
 
     $window.scroll(function() {
         if ( $window.scrollTop() >= distance ) {
-            $('.select-navigation').addClass('fixed-top');
-
-        }else {
-            $('.select-navigation').removeClass('fixed-top');
-
+            selectNavigation.addClass('fixed-top');
+        }
+        else {
+            selectNavigation.removeClass('fixed-top');
         }
     });
 });
