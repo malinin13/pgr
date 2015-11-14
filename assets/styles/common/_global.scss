@@ -32,6 +32,11 @@
 
 body {
   overflow-x: hidden;
+
+  //when the select panel is fixed
+  &.padding-top {
+    padding-top: 95px;
+  }
 }
 
 p {
