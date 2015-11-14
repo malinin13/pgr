@@ -26,21 +26,14 @@ $(document).ready(function () {
 
     var distance = $('.select-navigation').offset().top,
         $window = $(window);
-    var selectNavFixed = 0;
 
     $window.scroll(function() {
         if ( $window.scrollTop() >= distance ) {
-            selectNavFixed = 1;
             $('.select-navigation').addClass('fixed-top');
 
         }else {
-            selectNavFixed = 0;
             $('.select-navigation').removeClass('fixed-top');
 
         }
     });
-
-    if(selectNavFixed) {
-    }else {
-    }
 });
