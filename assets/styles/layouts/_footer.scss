@@ -1,0 +1,6 @@
+footer {
+  color: #6a6969;
+  background-color: #252525;
+
+  @include custom-link(#42b8dd);
+}
