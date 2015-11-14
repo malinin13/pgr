@@ -47,8 +47,8 @@
 
 $fa-font-path: "../../bower_components/font-awesome/fonts" !default;
 @import "../../bower_components/font-awesome/scss/font-awesome";
-@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.css";
-@import "../../bower_components/owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "../../bower_components/owl.carousel/src/scss/owl.carousel";
+@import "components/owl.theme.red";
 // endbower
 
 @import "common/mixins/mixins";

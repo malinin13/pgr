@@ -1,0 +1,41 @@
+.promo-item {
+  background-color: #fff;
+
+  .owl-theme .owl-dots {
+    text-align: left;
+
+    margin-top: -30px!important;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .promo-item-body {
+    padding: 30px;
+
+    h3 {
+      color: #2a2a2a;
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (min-width: $screen-lg-desktop) {
+    max-height: 340px;
+    overflow: hidden;
+
+    .promo-item-body {
+      max-height: 345px;
+      overflow: auto;
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    max-height: 275px;
+
+    .promo-item-body {
+      max-height: 275px;
+      overflow: auto;
+    }
+  }
+}

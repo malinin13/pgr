@@ -3,4 +3,12 @@ footer {
   background-color: #252525;
 
   @include custom-link(#42b8dd);
+
+  @media screen and (max-width: $screen-xs-max) {
+    ul {
+      li {
+        display: block!important;
+      }
+    }
+  }
 }
