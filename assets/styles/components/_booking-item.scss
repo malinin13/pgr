@@ -7,7 +7,7 @@ $booking-item-height: 80px;
   margin-bottom: 20px;
   @include clearfix();
 
-  @media screen and (min-height: $screen-sm-min) {
+  @media screen and (min-width: $screen-sm-min) {
     height: $booking-item-height;
     overflow: hidden;
   }
@@ -19,6 +19,7 @@ $booking-item-height: 80px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: bold;
   }
 
   .booking-item-actions {
@@ -34,6 +35,7 @@ $booking-item-height: 80px;
       height: 100%;
       padding: 0 25px 0;
       font-size: 20px;
+      font-weight: bold;
 
       @media screen and (max-width: $screen-sm-max) {
         padding: 0 5px 0;
@@ -50,7 +52,7 @@ $booking-item-height: 80px;
       padding-right: 20px;
       font-size: 16px;
       color: #393939;
-      font-weight: bold;
+      font-weight: 600;
 
       @media screen and (max-width: $screen-sm-max) {
         padding: 0 15px 0;

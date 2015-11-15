@@ -30,8 +30,13 @@
   color: $brand-orange;
 }
 
+.text-yellow {
+  color: $brand-yellow;
+}
+
 body {
   overflow-x: hidden;
+  font-family: "proxima-nova", sans-serif;
 
   //when the select panel is fixed
   &.padding-top {
@@ -49,7 +54,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #return-to-top {
@@ -63,4 +68,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   a {
     color: #b7b7b7;
   }
+}
+
+.no-p-top {
+  padding-top: 0!important;
+}
+
+.no-p-bot {
+  padding-bottom: 0!important;
 }

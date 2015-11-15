@@ -13,6 +13,7 @@
   .logo-section {
     position: relative;
     display: inline-block;
+    @include center-vertically(75px, 62px);
     img {
       position: absolute;
       bottom: 0;
@@ -22,6 +23,7 @@
 
   .btn {
     @include center-vertically(75px, 45px);
+    margin-left: 15px;
   }
 
   @media screen and (max-width: $screen-xs-max) {
@@ -91,5 +93,9 @@
   @media screen and (max-width: $screen-xs-max) {
     height: auto;
     padding: 50px 0;
+
+    h3 {
+      font-size: 35px!important;
+    }
   }
 }

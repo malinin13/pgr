@@ -2,12 +2,24 @@
   padding: 20px 0;
   @include custom-select(#fff, 55px, $brand-text-gray, $brand-text-gray);
 
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 10px 0 20px;
+  }
+
   h4 {
-    margin-top: 20px;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-top: 20px;
+      text-align: right;
+    }
   }
 
   .select {
     border: 3px solid $brand-orange;
+
+    select {
+      //because of the additional border on select
+      height: 49px;
+    }
   }
 
   &.fixed-top {
