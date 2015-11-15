@@ -33,17 +33,41 @@ $booking-item-height: 80px;
 
     .btn {
       height: 100%;
-      padding: 0 25px 0;
       font-size: 20px;
       font-weight: bold;
+      padding: 0;
+      border: none;
+      color: #fff;
 
+      span {
+        padding: 0 25px 0;
+      }
+
+      &:hover {
+        span {
+          &.bg-red {
+            background-color: lighten($brand-red, 10%);;
+          }
+          &.bg-blue {
+            background-color: lighten($brand-blue, 10%);;
+          }
+        }
+      }
       @media screen and (max-width: $screen-sm-max) {
-        padding: 0 5px 0;
+        span {
+          padding: 0 10px 0;
+        }
+
         font-size: 16px;
       }
 
       @media screen and (max-width: $screen-xs-max) {
-        width: 50%;
+        width: 100%;
+
+        span {
+          display: inline-block;
+          width: 50%;
+        }
       }
 
     }
