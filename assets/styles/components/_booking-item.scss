@@ -20,6 +20,10 @@ $booking-item-height: 80px;
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: bold;
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 18px;
+    }
   }
 
   .booking-item-actions {
