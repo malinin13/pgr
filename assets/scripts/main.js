@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('body').mousemove(function (e) {
-        var amountMovedX = (e.pageX/2 * -1 / 5);
-        var amountMovedY = (e.pageY/2 * -1 / 5);
-        if(amountMovedY >= -250) {
+        var amountMovedX = (e.pageX / 2 * -1 / 5);
+        var amountMovedY = (e.pageY / 2 * -1 / 5);
+        if (amountMovedY >= -250) {
             $('.hero-section-overlay').css({'transform': 'translate3d(' + amountMovedX + 'px,' + amountMovedY + 'px, 0px)'});
         }
     });
@@ -33,8 +33,8 @@ $(document).ready(function () {
     var distance = selectNavigation.offset().top,
         $window = $(window);
 
-    $window.scroll(function() {
-        if ( $window.scrollTop() >= distance ) {
+    $window.scroll(function () {
+        if ($window.scrollTop() >= distance) {
             selectNavigation.addClass('fixed-top');
             $('body').addClass('padding-top');
         }
@@ -44,11 +44,12 @@ $(document).ready(function () {
         }
     });
 
-    $('#select-nav').change(function(){
+    $('#select-nav').change(function () {
         var value = $(this).val();
         $('html, body').animate({
-            scrollTop: $( '#' + $(this).val() ).offset().top
+            scrollTop: $('#' + $(this).val()).offset().top
         }, 500);
         return false;
     });
+
 });

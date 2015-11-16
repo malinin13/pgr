@@ -13,6 +13,8 @@ var gulp = require('gulp'),
 var jsPath = [
     'bower_components/jquery/dist/jquery.js',
     'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+    'assets/scripts/auto-height-animate.js',
+    'assets/scripts/expandable.js',
     'bower_components/owl.carousel/dist/owl.carousel.js'
 ];
 

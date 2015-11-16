@@ -1,0 +1,16 @@
+$expandable-content-height: 200px; //if it's changed, the corresponding variable in the JS should be also change.
+
+@media screen and (max-width: $screen-xs-max) {
+  .expandable-content {
+    height: $expandable-content-height;
+    overflow: hidden;
+  }
+
+  .expandable-toggle {
+    position: relative;
+    display: block;
+    color: $brand-orange!important;
+    padding: 15px 0 15px 30px;
+  }
+
+}

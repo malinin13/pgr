@@ -39,5 +39,8 @@
     "gulp-sourcemaps": "^1.5.1",
     "gulp-uglify": "^1.4.1",
     "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "readmore-js": "^2.1.0"
   }
 }
