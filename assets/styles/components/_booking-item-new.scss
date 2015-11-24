@@ -2,7 +2,7 @@ $booking-item-new-height: 120px;
 
 .booking-item-new {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid $brand-darker-gray;
   margin-bottom: 20px;
 
   @media screen and (min-width: $screen-sm-min) {
