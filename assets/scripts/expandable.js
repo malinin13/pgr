@@ -1,4 +1,3 @@
-var expandable = $('.expandable-content');
 var expandableHeight = 200;
 var expandableToggle = $('.expandable-toggle');
 

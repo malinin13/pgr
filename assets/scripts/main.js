@@ -47,7 +47,8 @@ $(document).ready(function () {
     $('#select-nav').change(function () {
         var value = $(this).val();
         $('html, body').animate({
-            scrollTop: $('#' + $(this).val()).offset().top
+            scrollTop: $('#' + $(this).val()).offset().top - 95
+            //95 is the height of the select-nav block
         }, 500);
         return false;
     });
